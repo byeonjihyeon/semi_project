@@ -23,7 +23,7 @@
              <div class="menu-item">헬스
                <div class="submenu">
                  <a href="#">헬스장 찾기</a>
-                 <a href="#">헬스장 등록</a>
+                 
                  <a href="#">헬스장 관리</a>
                </div>
              </div>
