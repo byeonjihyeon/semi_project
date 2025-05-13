@@ -275,13 +275,14 @@ a {
   flex: 1;
  
 }
+
 .page-title {
   font-weight : bold;
-  padding: 30px;
   text-align: left;
   font-family: ns-b;
   font-size: 30px;
-  color: var(--main2);
+  padding-bottom: 20px;
+  color: #222222;
 }
 .footer {
   background-color: var(--gray6);
@@ -374,10 +375,17 @@ section.section.bg-section {
 }
 
 .tbl {
-  border-top: 1px solid var(--main3);
+  border-top: 1px solid #d6d6d6;
   width: 100%;
   border-spacing: 0;
 }
+
+.adminTbl {
+  border-top: 1px solid #d6d6d6;
+  width: 100%;
+  border-spacing: 0;
+}
+
 .tbl th,
 .tbl td {
   text-align: center;
@@ -391,6 +399,25 @@ section.section.bg-section {
 .tbl th {
   background-color: #F5B8B8;
 }
+
+.adminTbl th,
+.adminTbl td {
+  text-align: center;
+  border-bottom: 1px solid var(--line2);
+  padding: 10px 10px;
+}
+
+.adminTbl th {
+  background-color: #efefef;
+  text-align: center;
+  border-bottom: 1px solid var(--line2);
+  padding: 10px 10px;
+}
+
+.adminTbl.tbl-hover tbody > tr:hover {
+  background-color: #f8f9fa;
+}
+
 .tbl.tbl-hover tbody > tr:hover {
   cursor: pointer;
   background-color: #efefef;

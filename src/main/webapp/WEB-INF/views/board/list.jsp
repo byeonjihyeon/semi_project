@@ -8,7 +8,6 @@
 <title>자유 게시판</title>
 </head>
 <body>
-
 	  <jsp:include page="/WEB-INF/views/common/header.jsp"></jsp:include>
 	  	<div class="container">
 		 <jsp:include page="/WEB-INF/views/common/sidemenuBoard.jsp"></jsp:include>
