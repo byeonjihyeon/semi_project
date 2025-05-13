@@ -29,7 +29,7 @@
              </div>
              <div class="menu-item">게시판
                <div class="submenu">
-                 <a href="#">공지사항</a>
+                 <a href="/board/alist?reqPage=1">공지사항</a>
                  <a href="/board/list?reqPage=1">자유게시판</a>
                </div>
              </div>

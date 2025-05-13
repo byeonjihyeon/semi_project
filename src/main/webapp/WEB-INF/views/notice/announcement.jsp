@@ -7,7 +7,6 @@
 <meta charset="UTF-8">
 <title>hi</title>
 </head>
-
 <body>
  <div class="wrap">
  	<jsp:include page="/WEB-INF/views/common/header.jsp"></jsp:include>
