@@ -30,14 +30,14 @@
              <div class="menu-item">게시판
                <div class="submenu">
                  <a href="#">공지사항</a>
-                 <a href="#">자유게시판</a>
+                 <a href="/board/list?reqPage=1">자유게시판</a>
                </div>
              </div>
            </nav>
          </div>
          <div class="header-right">
            <nav class="main-menu">
-             <div class="menu-item"><a href='#'>로그인</a>
+             <div class="menu-item"><a href='/member/loginFrm'>로그인</a>
               <%-- 서브 메뉴 만들시 사용할
                <div class="submenu">
                  <a href="#">회원가입</a>
