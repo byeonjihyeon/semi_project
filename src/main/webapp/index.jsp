@@ -18,7 +18,7 @@
  	<div>
 	  <jsp:include page="/WEB-INF/views/common/header.jsp"></jsp:include>	
       <main class="main-content">
-        나는 메인!!
+     
       </main>
        <jsp:include page="/WEB-INF/views/common/footer.jsp"></jsp:include>	
     </div>
