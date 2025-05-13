@@ -37,6 +37,8 @@
          </div>
          <div class="header-right">
            <nav class="main-menu">
+           <c:choose>
+				<c:when test='${empty sessionScope.loginMember}'>
              <div class="menu-item"><a href='/member/loginFrm'>로그인</a>
               <%-- 서브 메뉴 만들시 사용할
                <div class="submenu">
@@ -53,6 +55,26 @@
                </div>
                --%>
              </div>
+             </c:when>
+				<c:otherwise>
+             <div class="menu-item"><a href='#'>마이페이지</a>
+              <%-- 서브 메뉴 만들시 사용할
+               <div class="submenu">
+                 <a href="#">회원가입</a>
+                 <a href="#">내 정보</a>
+               </div>
+               --%>
+             </div>
+             <div class="menu-item"><a href='/member/logOutF'>로그아웃</a>
+             	<%-- 서브 메뉴 만들시 사용할 
+               <div class="submenu">
+                 <a href="#">문의하기</a>
+                 <a href="#">FAQ</a>
+               </div>
+               --%>
+             </div>
+            	 </c:otherwise>
+			</c:choose>
            </nav>
          </div>
        </div>
