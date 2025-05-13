@@ -5,6 +5,15 @@
 <script src="/resources/js/sweetalert.min.js"></script>
 <!DOCTYPE html>
 
+<style>
+	p {
+	font-size: 13px;
+	}
+	#mainContent {
+	font-size : 25px;
+	font : bold;
+	}
+</style>
 <html>
 <head>
 <meta charset="UTF-8">
@@ -16,7 +25,7 @@
       <form action="/loginChk" method="POST" class="login-form" onsubmit='return validateForm()'>
           <!-- 회원 유형 선택 -->
           <div class="user-type">
-              <p style="text-align: center;">회원가입</p>
+              <p style="text-align: center;" id="mainContent">회원가입</p>
           </div>
 
           
@@ -29,7 +38,7 @@
           <div class="input-group">
               <label for="userPw">비밀번호</label>
               <input type="password" id="userPw" name="userPw" placeholder="비밀번호를 입력하세요" required>
-              <p id="pwMsg" name="pwMsg"></p>
+              <p id="pwMsg" name="pwMsg">영어,숫자,특수문자 포함 6~30글자</p>
           </div>
           <div class="input-group">
               <label for="userPwRe">비밀번호확인</label>
@@ -129,6 +138,19 @@
       	const pwMsg = $('#pwMsg');
       	const pwReMsg = $('#pwReMsg');
       		
+      	$(userPw).on('input',function(){
+      		checkObj.userPw = false;
+      		
+      		const regExp = /^[a-zA-Z0-9!@#$]{6,30}$/; // 영어,숫자,특수문자 포함 6 ~ 30자.
+      		
+      		if(regExp.test($(this).val())){
+      			$(pwMsg).text('사용 가능한 비밀번호 입니다.');
+      			checkObj.userPw = true;
+      		}else{
+      			$(pwMsg).text('비밀번호의 양식에 맞게 작성해주세요.');
+      			checkObj.userPw = false;
+      		}
+      	})
       	
       </script>
 </body>
