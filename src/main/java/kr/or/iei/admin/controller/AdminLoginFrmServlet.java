@@ -1,4 +1,4 @@
-package kr.or.iei.member.controller;
+package kr.or.iei.admin.controller;
 
 import java.io.IOException;
 
@@ -10,16 +10,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class LoginServlet
+ * Servlet implementation class adminLoginFrmServlet
  */
-@WebServlet("/member/loginFrm")
-public class LoginServlet extends HttpServlet {
+@WebServlet("/admin/loginFrm")
+public class AdminLoginFrmServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public LoginServlet() {
+    public AdminLoginFrmServlet() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -29,14 +29,11 @@ public class LoginServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		//1. 인코딩 - 필터
-		//2. 값추출 - x
-		//3. 로직 - x
+		//2. 값 추출 - x
+		//3. 로직 - 로그인페이지 이동
 		//4. 결과 처리
-			//4.1 이동할 페이지 경로 지정
-		RequestDispatcher view = request.getRequestDispatcher("/WEB-INF/views/member/login.jsp");
-			//4.2 화면 구현에 필요한 데이터 등록 - x
-			//4.3 페이지 이동
-			view.forward(request, response);
+		request.getRequestDispatcher("/WEB-INF/views/admin/adminLoginFrm.jsp").forward(request, response);
+		
 	}
 
 	/**

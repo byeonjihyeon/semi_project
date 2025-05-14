@@ -1,20 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 package kr.or.iei.common;
 
 import java.sql.Connection;
@@ -30,10 +13,7 @@ public class JDBCTemplate {
 		
 		try {
 			Class.forName("oracle.jdbc.driver.OracleDriver");
-
-
 			conn = DriverManager.getConnection("jdbc:oracle:thin:@127.0.0.1:1521:xe","jogym", "1234");
-
 			conn.setAutoCommit(false); //자동 커밋 방지. 트랜잭션 관리는 서비스 계층에서 처리
 		
 		} catch (ClassNotFoundException e) {

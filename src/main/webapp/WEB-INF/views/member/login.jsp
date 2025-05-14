@@ -12,7 +12,7 @@
       <div class="logo">
           <img src="your-logo.png" alt="헬스장 플랫폼 로고" />
       </div>
-      <form action="#" method="POST" class="login-form">
+      <form action="/loginChk" method="POST" class="login-form">
           <!-- 회원 유형 선택 -->
           <div class="user-type">
               <label>
@@ -37,7 +37,7 @@
           <button type="submit" class="login-btn">로그인</button>
       </form>
       <div class="links">
-          <a href="#">아이디 찾기</a> | <a href="#">비밀번호 찾기</a> | <a href="#">회원가입</a> | <a href="#">헬스장 등록</a>
+          <a href="/member/searchId">아이디 찾기</a> | <a href="#">비밀번호 찾기</a> | <a href="/member/joinFrm">회원가입</a> | <a href="#">헬스장 등록</a>
       </div>
   </div>
 </body>
