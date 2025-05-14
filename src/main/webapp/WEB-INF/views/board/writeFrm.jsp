@@ -72,10 +72,6 @@
 		</div>     
 	<jsp:include page="/WEB-INF/views/common/footer.jsp"></jsp:include>	
 	<script>
-	function check()({
-		title : "알림",
-		text : "작성되었습니다?",
-		icon : "success"
-	}).
+	
 	</script>
 </html>
