@@ -1,4 +1,4 @@
-package src.main.java.kr.or.iei.admin.controller;
+package kr.or.iei.admin.controller;
 
 import java.io.IOException;
 
