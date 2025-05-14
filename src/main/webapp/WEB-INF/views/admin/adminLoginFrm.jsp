@@ -1,11 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<link rel="stylesheet" href="/resources/css/login.css"> <!-- CSS 파일 연결 --> 
-<script src="/resources/js/sweetalert.min.js"></script> <!-- 로그인 결과 알림창 용도 -->  
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> <!-- jQuery 연결 -->     
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" href="/resources/css/login.css"> <!-- CSS 파일 연결 --> 
+<script src="/resources/js/sweetalert.min.js"></script> <!-- 로그인 결과 알림창 용도 -->  
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> <!-- jQuery 연결 -->     
 <style>
 	.logo img {
 	width: 50px;
