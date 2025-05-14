@@ -1,8 +1,6 @@
 package kr.or.iei.board.controller;
 
 import java.io.IOException;
-
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -10,16 +8,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class WriteFrmServlet
+ * Servlet implementation class EditorFrmServlet
  */
-@WebServlet("/board/writeFrm")
-public class WriteFrmServlet extends HttpServlet {
+@WebServlet("/notice/write")
+public class EditorFrmServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public WriteFrmServlet() {
+    public EditorFrmServlet() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -28,17 +26,8 @@ public class WriteFrmServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		//1.인코딩 - 필터
-		//2. 값 추출
-		//3. 로직
-		//4. 결과 처리
-			//4.1 이동할 페이지 경로 지정
-		RequestDispatcher view = request.getRequestDispatcher("/WEB-INF/views/board/writeFrm.jsp");
-			//4.2 화면 구현에 필요한 데이터 등록
 		
-			//4.3 페이지 이동
-		view.forward(request, response);
-		
+		request.getRequestDispatcher("/WEB-INF/views/board/list.jsp").forward(request, response);
 	}
 
 	/**

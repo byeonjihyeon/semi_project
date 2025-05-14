@@ -110,6 +110,7 @@
 				<br><br>
 					<div class='list-header'>
 						<a class='btn-point write-btn' href='/board/writeFrm'>글쓰기(일반)</a> <%-- 나중에 로그인시 보이게 추가해줄것 --%>
+						
 						<div class='box-container2'>
 			 			<div class="box4">최신순/오래된순</div>  <%-- onclick --%>
 			 			<div class="box5">조회수</div>
@@ -145,5 +146,6 @@
 			</section>
 	         </main>
 		</div>     
+		
 </body>
 </html>
