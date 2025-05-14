@@ -77,7 +77,9 @@
                </div>
                --%>
              </div>
+
              <div class="menu-item"><a href='/member/logOut'>로그아웃</a>
+
              	<%-- 서브 메뉴 만들시 사용할 
                <div class="submenu">
                  <a href="#">문의하기</a>
