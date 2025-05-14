@@ -1,18 +1,19 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<link rel="stylesheet" href="/resources/css/default.css"> <!-- CSS 파일 연결 -->
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %> <!-- JSTL 라이브러리 선언 -->    
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-<style>
-	header a, footer a {
-	 text-decoration: none;
-	 color: #555;
-	}
-</style>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<link rel="stylesheet" href="<c:url value='/resources/css/default.css' />">
+	<style>
+		header a, footer a {
+		 text-decoration: none;
+		 color: #555;
+		}
+	</style>
 </head>
 <body>
  <header class="header">
@@ -23,8 +24,7 @@
              <div class="menu-item">헬스
                <div class="submenu">
                  <a href="#">헬스장 찾기</a>
-                 
-                 <a href="#">헬스장 관리</a>
+                 <a href="/gym/registerFrm">헬스장 등록</a>
                </div>
              </div>
              <div class="menu-item">게시판
