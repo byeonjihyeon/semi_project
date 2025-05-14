@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>자유게시판 작성</title>
+<title>공지사항 게시판 작성</title>
 </head>
 <body>
 	<jsp:include page="/WEB-INF/views/common/header.jsp"></jsp:include>	
@@ -20,33 +20,49 @@
 						<input type='hidden' name='noticeWriter' value='${loginMember.memberNo}'>
 						<table class='tbl'>
 							<tr>
-								<th>제목</th>
+								<th class="name-title">제목</th>
 								<td colspan='3'>
 									<div class='input-item'>
 										<input type='text' name='noticeTitle'>
 									</div>
 								</td>
 							</tr>
+							
 							<tr>
 								<th style='width:10%'>작성자</th>
 								<td style='width:40%'>
 									<span>${loginMember.memberId}</span>
 								</td>
-								<th style='width:10%'>첨부파일</th>
-								<td style='width:40%'>
-									<input type='file' name='uploadFile'>
-								</td>
 							</tr>
+							
 							<tr>
 								<td colspan='4'>
 									<div class='input-item'>
-										<textarea name='noticeContent'></textarea>
+									
+										<textarea name='noticeContent'>내용</textarea>
 									</div>
 								</td>
 							</tr>
 							<tr>
+								<th style='width:10%'>이미지 첨부</th>
+								<td style='width:40%'>
+									<input type='file' name='uploadFile'>
+								
+								</td>
+								<td>이미지는 gif, jpg, png 파일 형식만 가능합니다.(5MB 이하)</td>
+							</tr>
+							
+							<tr>
+								<th style='width:10%'>첨부파일</th>
+								<td style='width:40%'>
+									<input type='file' name='uploadFile'>
+								</td>
+								<td>pdf, doc, docx, ppt, pptx, xls, xlsx, mp3 파일형식만 가능합니다.(5MB 이하)</td>
+							</tr>
+							<tr>
+							
 								<td colspan='4'>
-									<button type='submit' class='btn-primary lg'>작성하기</button>
+									<button type="submit" class='btn-primary lg' id="check">작성하기</button>
 								</td>
 							</tr>
 						</table>
@@ -55,6 +71,11 @@
 	         </main>
 		</div>     
 	<jsp:include page="/WEB-INF/views/common/footer.jsp"></jsp:include>	
-
-</body>
+	<script>
+	function check()({
+		title : "알림",
+		text : "작성되었습니다?",
+		icon : "success"
+	}).
+	</script>
 </html>

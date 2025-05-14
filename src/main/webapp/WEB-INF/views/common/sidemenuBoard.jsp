@@ -12,7 +12,7 @@
           <nav>
             <ul>
               <li><a>게시판</a></li>
-              <li><a href="#">공지사항</a></li>
+              <li><a href="/board/alist?reqPage=1">공지사항</a></li>
               <li><a href="/board/list?reqPage=1">자유게시판</a></li>
             </ul>
           </nav>
