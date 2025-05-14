@@ -1,4 +1,4 @@
-package src.main.java.kr.or.iei.admin.controller;
+package kr.or.iei.gym.controller;
 
 import java.io.IOException;
 
@@ -10,16 +10,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class adminLoginFrmServlet
+ * Servlet implementation class gymEnrollFrmServlet
  */
-@WebServlet("/admin/loginFrm")
-public class AdminLoginFrmServlet extends HttpServlet {
+@WebServlet("/gym/registerFrm")
+public class gymRegisterFrmServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public AdminLoginFrmServlet() {
+    public gymRegisterFrmServlet() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -28,11 +28,9 @@ public class AdminLoginFrmServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		//1. 인코딩 - 필터
-		//2. 값 추출 - x
-		//3. 로직 - 로그인페이지 이동
-		//4. 결과 처리
-		request.getRequestDispatcher("/WEB-INF/views/admin/adminLoginFrm.jsp").forward(request, response);
+		RequestDispatcher view = request.getRequestDispatcher("/WEB-INF/views/gym/register.jsp");
+		view.forward(request, response);
+
 		
 	}
 
