@@ -91,7 +91,6 @@
 	
 </style>
 <body>
-
 	  <jsp:include page="/WEB-INF/views/common/header.jsp"></jsp:include>
 	  	<div class="container">
 		 <jsp:include page="/WEB-INF/views/common/sidemenuBoard.jsp"></jsp:include>
