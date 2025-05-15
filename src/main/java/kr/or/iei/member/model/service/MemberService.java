@@ -28,6 +28,25 @@ public class MemberService {
 		return cnt;
 	}
 
+	public int joinMember(Member m) {
+		Connection conn = JDBCTemplate.getConnection();
+		int result = dao.joinMember(conn, m);
+		if(result > 0) {
+			JDBCTemplate.commit(conn);
+		}else {
+			JDBCTemplate.rollback(conn);
+		}
+		JDBCTemplate.close(conn);
+		return result;
+	}
+
+	public int nickNameDuplChk(String userNickName) {
+		Connection conn = JDBCTemplate.getConnection();
+		int cnt = dao.nickNameDuplChk(conn, userNickName);
+		JDBCTemplate.close(conn);
+		return cnt;
+	}
+
 	
 	
 }

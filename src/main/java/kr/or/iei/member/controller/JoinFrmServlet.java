@@ -12,14 +12,14 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class LoginFrmServlet
  */
-@WebServlet("/member/loginFrm")
-public class LoginFrmServlet extends HttpServlet {
+@WebServlet("/member/joinFrm")
+public class JoinFrmServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public LoginFrmServlet() {
+    public JoinFrmServlet() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -33,7 +33,7 @@ public class LoginFrmServlet extends HttpServlet {
 		// 로직
 		// 결과처리
 			// 페이지 경로 지정
-			RequestDispatcher view = request.getRequestDispatcher("/WEB-INF/views/member/login.jsp");
+			RequestDispatcher view = request.getRequestDispatcher("/WEB-INF/views/member/joinFrm.jsp");
 			
 			// 데이터 등록
 			
