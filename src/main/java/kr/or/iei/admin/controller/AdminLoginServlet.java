@@ -62,10 +62,7 @@ public class AdminLoginServlet extends HttpServlet {
 				session.setAttribute("loginAdmin", loginAdmin);
 				
 				//회원 관리 페이지로 이동
-				response.sendRedirect("/admin/members?page=1");
-				
-				
-				
+				response.sendRedirect("/admin/member/list?page=1");
 			}
 	}
 

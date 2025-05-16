@@ -47,6 +47,14 @@ public class MemberService {
 		return cnt;
 	}
 
+	public String searchId(String userName, String userEmail) {
+		Connection conn = JDBCTemplate.getConnection();
+		String memberId = dao.searchId(conn, userName, userEmail);
+		JDBCTemplate.close(conn);
+		return memberId;
+	}
+
+
 	
 	
 }

@@ -137,6 +137,35 @@ public class MemberDao {
 		return cnt;
 	}
 
+	public String searchId(Connection conn, String userName, String userEmail) {
+		PreparedStatement pstmt = null;
+		ResultSet rset = null;
+		String memberId = null;
+		
+		String query = "select member_id, member_Email from tbl_member where member_name = ? and member_email = ?";
+		
+		try {
+			pstmt = conn.prepareStatement(query);
+			
+			pstmt.setString(1, userName);
+			pstmt.setString(2, userEmail);
+			
+			rset = pstmt.executeQuery();
+			
+			if(rset.next()) {
+				memberId = rset.getString("member_id");
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} finally {
+			JDBCTemplate.close(rset);
+			JDBCTemplate.close(pstmt);
+		}
+		
+		return memberId;
+	}
+
 	
 
 }

@@ -123,7 +123,6 @@
   display: flex;
   min-height: 100vh;
   background-color: #fff;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 .sidebar {
@@ -281,7 +280,7 @@ a {
   text-align: left;
   font-family: ns-b;
   font-size: 30px;
-  padding-bottom: 20px;
+  padding-bottom: 50px;
   color: #222222;
 }
 .footer {
@@ -666,8 +665,8 @@ section.section.bg-section {
   line-height: 40px;
   overflow: hidden;
 }
-.pagination.circle-style > li {
-  border-radius: 50%;
+.pagination.square-style > li {
+  /*border-radius: 50%;*/
 }
 .pagination > li > a.page-item {
   display: block;
@@ -696,4 +695,148 @@ section.section.bg-section {
 .tbl td.boardTitle>a {
 	color : #000000;
 }
+
+/* 회원 세부정보 페이지 */
+.member-info-card {
+  max-width: 900px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  padding: 30px;
+  position: relative;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.member-info-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.member-info-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+}
+
+.member-info-table th,
+.member-info-table td {
+  padding: 12px 10px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.member-info-table th {
+  color: #666;
+  width: 120px;
+}
+
+.member-info-button-wrapper {
+  text-align: center;
+}
+
+.member-info-btn {
+  background-color: #CE2029;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 0 10px;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.member-info-btn-secondary {
+  background-color: #555;
+}
+
+.member-info-btn-secondary:hover {
+  background-color: #444;
+}
+
+.member-info-btn-small {
+  padding: 6px 10px;
+  font-size: 0.9rem;
+  background-color: #CE2029;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* 회원 정보 수정 */
+
+.member-edit-container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.member-edit-container h2 {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.member-edit-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 25px;
+}
+
+.member-edit-table th,
+.member-edit-table td {
+  text-align: left;
+  padding: 12px;
+  vertical-align: top;
+  border-bottom: 1px solid #eee;
+}
+
+.member-edit-table th {
+  width: 120px;
+  color: #555;
+  font-weight: 600;
+}
+
+.member-edit-input,
+.member-edit-select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.member-edit-input[readonly] {
+  background-color: #f4f4f4;
+  cursor: not-allowed;
+}
+
+.member-edit-btn-group {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.member-edit-btn {
+  background-color: #CE2029;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 8px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+
+
 

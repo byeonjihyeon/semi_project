@@ -67,6 +67,8 @@
 	width : 80px;
 	padding : 5px;
 	text-align : center;
+	color :  pink;
+	background color : pink;
 	}
 	.box5{
 	border : 1px solid black;
@@ -86,6 +88,11 @@
 	
 	width : 70px;
 	height : 30px;
+	
+	}
+	.box-container3{
+	color : blue;
+	width: 100%;
 	
 	}
 	
@@ -121,7 +128,8 @@
 				<div class='list-content'>
 					<table class='tbl tbl-hover'>
 						<tr>
-							<th style='width:40%;'>제목</th>
+							<th style='width:10%;'>번호</th>
+							<th style='width:30%;'>제목</th>
 							<th style='width:15%;'>작성자</th>
 							<th style='width:20%;'>작성일</th>
 							<th style='width:10%;'>조회수</th>
@@ -138,11 +146,26 @@
 						</c:forEach>
 					</table>
 				</div>
+				
+				<table class="tbl tbl-hover">
+				<tr>
+					<th style='width:10%;'>번호</th>
+					<th style='width:30%;'>제목을 써야합니다</th>
+					<th style='width:15%;'>작성자</th>
+					<th style='width:20%;'>작성일</th>
+					<th style='width:10%;'>조회수</th>
+					<th style='width:10%;'>추천수</th>
+				</tr>
+				</table>
+				
 				<div class="page-Navi" id='pageNavi'>${pageNavi}</div>
 				<div class="box-container3">
-				<div class="box7"></div>
-				<button type="submit">입력</button>
+		
+			
 				</div>
+				<div class="box7"></div>
+				<button class="btn-primary lg" >입력</button>
+				
 			</section>
 	         </main>
 		</div>     

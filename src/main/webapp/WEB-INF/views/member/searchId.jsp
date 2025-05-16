@@ -17,46 +17,38 @@
 <body>
 	<div class="login-container">
       
-      <form action="#" method="POST" class="login-form" onsubmit="return validateForm()">
+      <form action="/member/searchId" method="POST" class="login-form" onsubmit='return validateForm()'>
           <table>
           	<tr style="text-align: center;">
           		<td colspan="3" style="padding-bottom: 30px">아이디 찾기</td>
           	</tr>
           	<tr>
+          		<td style="padding-bottom: 15px; justify-content: center; text-align: center;">
+          			<label for="userName" >이름 입력 : </label>
+          		</td>
+          		<td style="padding-right: 10px; ">
+          		<input type="text" id="userName" name="userName" style="margin-bottom: 10px; margin-right: 20px; border:none; border-bottom: solid 1px;" required>
+          		</td>
+          	</tr>
+          	<tr>
           		<td style="padding-bottom: 15px;">
-          			<label for="searchId" >아이디 입력 : </label>
+          			<label for="memberEmail" >이메일 입력 : </label>
           		</td>
-          		<td>
-          			<input type="text" id="searchId" name="searchId">
-          			<p id="idMsg"></p>
-          		</td>
-          	</tr>
-          	<tr>
-          		<td style="padding-bottom: 15px;">
-          			<label for="searchIdEmail">이메일 입력 : </label>
-          		</td>
-          		<td style="padding-right: 15px;">
-          		<input type="email" id="searchIdEmail" name="searchIdEamil">
-          		<p id="emailMsg"></p>
-          		</td>
-          		<td>
-          		<button type="submit">인증번호 요청</button>
+          		<td style="padding-right: 10px;">
+          		<input type="email" id="memberEmail" name="memberEmail" style="margin-bottom: 10px; margin-right: 20px; border:none; border-bottom: solid 1px;" required>
           		</td>
           	</tr>
+          	
           	<tr>
-          	<td style="padding-bottom: 15px;">
-          		<input type="hidden" name="verification code" id="verification code" value="인증번호6자리 입력">
-          		<p></p>
-          	</td>
-          	</tr>
-          	<tr>
-          		<td colspan="3" style="text-align: center; ">
-          			<input type="submit" name="searchId-btn" id="searchId-btn" value="확인" >
+          		<td colspan="3" style="text-align: center;  ">
+          			<button type='submit' id="searchId">찾기</button>
           		</td>
           	</tr>
           </table>
       </form>
   </div>
-  <%-- API 공부 이후 작성 --%>>
+  <script>
+  	
+  </script>
 </body>
 </html>
